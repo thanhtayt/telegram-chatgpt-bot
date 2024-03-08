@@ -9,9 +9,9 @@ ARG OPENAI_TOKEN
 ARG LANG=en
 ARG CHAT_MODEL=gpt-3.5-turbo-1106
 
-ENV BOT_TOKEN=${BOT_TOKEN} \
-    OPENAI_TOKEN=${OPENAI_TOKEN} \
-    LANG=${LANG} \
-    CHAT_MODEL=${CHAT_MODEL}
+ENV BOT_TOKEN=${7115458079:AAHQ3rMkoD98r8bELoY-ioCsui-mc5iEQKg} \
+    OPENAI_TOKEN=${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} \
+    LANG=${en} \
+    CHAT_MODEL=${gpt-3.5-turbo-1106}
 COPY --from=base /chatgptbot .
 ENTRYPOINT ["./chatgptbot"]
